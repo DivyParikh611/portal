@@ -1,0 +1,7 @@
+.image-container {
+    background-image: url('../../assets/onlineCourse.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
