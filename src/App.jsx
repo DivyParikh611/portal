@@ -1,9 +1,11 @@
 import './App.css';
-import Home from './Components/Home/home';
-import Image from "./assets/main-logo.png";
-import Login from './Components/Login/login';
-import Image1 from "./assets/grant-thornton.png";
-import Feedback from './Components/Feedback/feedback';
+import Home from './Components/Home/home'
+import Image from "./assets/main-logo.png"
+//eslint-disable-next-line
+import Login from './Components/Login/login'
+import Image1 from "./assets/grant-thornton.png"
+//eslint-disable-next-line
+import Feedback from './Components/Feedback/feedback'
 
 function App() {
   return (

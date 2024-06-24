@@ -3,7 +3,7 @@ import "../Login/login.css"
 
 export default function Login() {
     return (
-        <div className='image-container'>
+        <div className='login-image-container'>
             <div class="container px-5 py-24 mx-auto flex flex-wrap items-center w-1/3">
                 <div class="rounded-xl p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 shadow-2xl bg-white opacity-85">
                     <h1 class="text-black text-2xl text-center font-bold mb-5 py-6">Login Now</h1>
