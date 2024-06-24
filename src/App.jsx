@@ -11,10 +11,7 @@ function App() {
       <header class="text-gray-600 body-font" style={{fontFamily:"Poppins"}}>
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-5">
-            <img src={Image} alt="" className='h-16 w-48'/>
-          </a>
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 px-8">
-            <img src={Image1} alt="" className='h-10 w-48'/>
+            <img src={Image} alt="" className='h-13 w-40'/>
           </a>
           <button className='text-black hover:bg-gray-100 px-3 py-4 rounded'>Programmes&nbsp;<i class="fa-solid fa-chevron-down text-md"></i></button>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -27,8 +24,12 @@ function App() {
            <i class="fa-solid fa-cart-shopping"></i> &nbsp;Cart (0)
           </button>
           <button class="flex ml-2 text-white bg-purple-800 border-0 py-2 px-6 focus:outline-none hover:bg-purple-900 rounded">Log In</button>
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ml-3">
+            <img src={Image1} alt="" className='h-10 w-48'/>
+          </a>
         </div>
       </header>
+      <Home/>
       {/* <Feedback/> */}
       {/* <Login /> */}
     </>
