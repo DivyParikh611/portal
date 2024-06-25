@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Feedback/feedback.css";
-import Stars from '../StarsRow/stars';
+import RatingSection from './FeedBack/feedback';
 
 export default function Feedback() {
   document.addEventListener("DOMContentLoaded", function () {
@@ -53,20 +53,7 @@ export default function Feedback() {
             </div>
             <div className="container py-12 mx-auto flex flex-wrap">
               <div className="md:pr-16 lg:pr-0 pr-0">
-                <h1 className='text-xl py-3 items-center'>Helped in relating the content to my job context - covered practical aspects along with the theory</h1>
-                <Stars/>
-                <h1 className='text-xl py-2'>How was the pace of the training?</h1>
-                <Stars/>
-                <h1 className='text-xl py-2'>The speaker's resolution of the queries raised during the session</h1>
-                <Stars/>
-                <h1 className='text-xl py-2'>The speaker's interaction with the participant as and when required</h1>
-                <Stars/>
-                <h1 className='text-xl py-2'>Information was presented in a clear, logical and structured manner</h1>
-                <Stars/>
-                <h1 className='text-xl py-2'>Speaker's command over the topic and the presentation</h1>
-                <Stars/>
-                <h1 className='text-xl py-2'>Speaker's communication of the concepts</h1>
-                <Stars/>
+                <RatingSection/>
               </div>
             </div>
             <div className="text-gray-600 body-font relative container px-5 py-2 mx-auto items-center text-center">

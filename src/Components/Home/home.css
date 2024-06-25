@@ -113,3 +113,10 @@
 .tab-content.active {
     display: block;
 }
+.benchMarks{
+    background-color: #3a1967;
+    background-image: url("https://www.learningt.com/static/media/about_grantbg.799bd866a681a13e89d8.jpg");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    position: relative;
+}
