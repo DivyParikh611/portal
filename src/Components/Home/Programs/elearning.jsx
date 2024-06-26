@@ -3,9 +3,9 @@ import React,{useState,useEffect} from 'react'
 export default function Elearning() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [tiles, setTiles] = useState([
-        { title: "Course Title 1", thumbnail: "https://api.learningt.com/wp-content/uploads/2023/07/PA-CPA-Onlive-live.png", hoursTaken: "20" },
-        { title: "Course Title 2", thumbnail: "https://api.learningt.com/wp-content/uploads/2023/07/PA-CPA-Onlive-live.png", hoursTaken: "20" },
-        { title: "Course Title 3", thumbnail: "https://api.learningt.com/wp-content/uploads/2023/07/PA-CPA-Onlive-live.png", hoursTaken: "20" },
+        { title: "Course Title 4", thumbnail: "https://api.learningt.com/wp-content/uploads/2023/07/PA-CPA-Onlive-live.png", hoursTaken: "20" },
+        { title: "Course Title 5", thumbnail: "https://api.learningt.com/wp-content/uploads/2023/07/PA-CPA-Onlive-live.png", hoursTaken: "20" },
+        { title: "Course Title 6", thumbnail: "https://api.learningt.com/wp-content/uploads/2023/07/PA-CPA-Onlive-live.png", hoursTaken: "20" },
     ]);
 
     useEffect(() => {

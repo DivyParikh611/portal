@@ -19,7 +19,7 @@ export default function Feedback() {
     <div style={{ fontFamily: "Poppins" }}>
         <div class="flex items-center justify-center flex-col relative">
           <img class="object-cover object-center rounded h-[17vw] w-full gtImage" alt="" src="https://api.learningt.com/wp-content/uploads/2023/07/contact-banner.jpg" />
-          <div class="absolute inset-0 flex items-start justify-start p-8">
+          <div class="absolute inset-0 flex items-center justify-center p-8">
           <h1 className="lg:text-4xl sm:text-2xl font-medium title-font mb-4 text-white">Feedback Form</h1>
           </div>
         </div>

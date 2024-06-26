@@ -6,43 +6,37 @@ export default function RatingSection() {
       <ul style={{listStyleType:"disc"}}>
         <li className='py-3'>
           <div className="flex items-center justify-between">
-            <h1 className='text-xl py-3 items-center'>Helped in relating the content to my job context - covered practical aspects along with the theory</h1>
+            <h1 className='text-xl py-2 w-2/3'>Helped in relating the content to my job context - covered practical aspects along with the theory</h1>
             <StarsRow />
           </div>
         </li>
         <li className='py-3'>
           <div className="flex items-center justify-between">
-            <h1 className='text-xl py-2'>How was the pace of the training?</h1>
+            <h1 className='text-xl py-2 w-2/3'>How comfortable was the pace of the training?</h1>
             <StarsRow />
           </div>
         </li>
         <li className='py-3'>
           <div className="flex items-center justify-between">
-            <h1 className='text-xl py-2'>The speaker's resolution of the queries raised during the session</h1>
+            <h1 className='text-xl py-2 w-2/3'>Did the trainer resolve all queries timely during the session?</h1>
             <StarsRow />
           </div>
         </li>
         <li className='py-3'>
           <div className="flex items-center justify-between">
-            <h1 className='text-xl py-2'>The speaker's interaction with the participant as and when required</h1>
+            <h1 className='text-xl py-2 w-2/3'>The trainer's interaction with you, as and when required?</h1>
             <StarsRow />
           </div>
         </li>
         <li className='py-3'>
           <div className="flex items-center justify-between">
-            <h1 className='text-xl py-2'>Information was presented in a clear, logical and structured manner</h1>
+            <h1 className='text-xl py-2 w-2/3'>Information was presented in a clear, logical and structured manner</h1>
             <StarsRow />
           </div>
         </li>
         <li className='py-3'>
           <div className="flex items-center justify-between">
-            <h1 className='text-xl py-2'>Speaker's command over the topic and the presentation</h1>
-            <StarsRow />
-          </div>
-        </li>
-        <li className='py-3'>
-          <div className="flex items-center justify-between">
-            <h1 className='text-xl py-2'>Speaker's communication of the concepts</h1>
+            <h1 className='text-xl py-2 w-2/3'>Did you find the speaker to have competent skills, and command over the topic?</h1>
             <StarsRow />
           </div>
         </li>
