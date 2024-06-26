@@ -16,7 +16,7 @@ export default function InstructorPrograms() {
         }, 3000);
 
         return () => clearInterval(interval);
-    }, [tiles]); // Depend on tiles to reset the interval when tiles change
+    }, [tiles]);
 
     const addNewTile = () => {
         const newTile = {
@@ -51,15 +51,6 @@ export default function InstructorPrograms() {
                     </div>
                 </div>
             </section>
-            {/* <section class="text-gray-600 body-font">
-                <div class="container px-12 py-20 mx-auto">
-                    <div class="flex flex-wrap -m-4 slider-container">
-                        {tiles.map((item, index) => (
-                            <ProgramTile key={index} item={item} image={item.thumbnail} />
-                        ))}
-                    </div>
-                </div>
-            </section> */}
         </>
     )
 }
