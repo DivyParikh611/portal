@@ -1,8 +1,13 @@
 import "../Home/home.css"
-import Image from "../../assets/no_user.png"
+import Slider from "react-slick";
+import { motion } from "framer-motion";
+import 'slick-carousel/slick/slick.css';
+import Image from "../../assets/no_user.png";
 import Elearning from "./Programs/elearning";
-import React, { useState, useEffect } from 'react'
+import 'slick-carousel/slick/slick-theme.css';
+import React, { useState, useEffect } from 'react';
 import InstructorPrograms from "./Programs/instructorPrograms";
+
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('InstructorLead');
@@ -61,7 +66,7 @@ export default function Home() {
       </div>
       <section className="flex flex-col text-center w-full mb-20">
         <div className="flex mx-auto border border-purple-800 rounded overflow-hidden mt-6 tab-bar">
-          <button className={`tab-button py-1 px-4 bg-purple-500 text-white focus:outline-none ${activeTab === 'InstructorLead' ? 'text-white bg-purple-800 font-medium' : 'text-purple-800 bg-white'
+          <button className={`tab-button py-1 px-4 focus:outline-none ${activeTab === 'InstructorLead' ? 'text-white bg-purple-800 font-medium' : ''
             }`}
             onClick={(event) => openTab(event, 'InstructorLead')}
           >
@@ -89,34 +94,34 @@ export default function Home() {
           </div>
           <div className="container py-6">
             <div className="flex flex-wrap -m-3">
-              <div className="p-2 lg:w-1/4">
+              <motion.div initial={{ y: 25, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }} className="p-2 lg:w-1/4">
                 <div className="h-full flex flex-col bg-opacity-75 px-8 pt-12 rounded-lg overflow-hidden text-center items-center justify-center relative">
                   <img src="https://api.learningt.com/wp-content/uploads/2023/06/rating-icon.png" alt="" />
                   <h1 className="text-5xl 2xl:text-6xl text-white mt-6">4.54 / 5</h1>
                   <h2 className="text-lg 2xl:text-xl text-white py-3">RATED BY CLIENTS</h2>
                 </div>
-              </div>
-              <div className="p-2 lg:w-1/4">
+              </motion.div>
+              <motion.div initial={{ y: 25, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.15 }} className="p-2 lg:w-1/4">
                 <div className="h-full flex flex-col bg-opacity-75 px-8 pt-12 rounded-lg overflow-hidden text-center items-center justify-center relative">
                   <img src="https://api.learningt.com/wp-content/uploads/2023/06/learner-icon.png" alt="" />
                   <h1 className="text-5xl 2xl:text-6xl text-white mt-6"><div className="flex"><NumberCounter initialNumber={17750} targetNumber={18000} />+</div></h1>
                   <h2 className="text-lg 2xl:text-xl text-white py-3">HAPPY LEARNERS</h2>
                 </div>
-              </div>
-              <div className="p-2 lg:w-1/4">
+              </motion.div>
+              <motion.div initial={{ y: 25, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.25 }} className="p-2 lg:w-1/4">
                 <div className="h-full flex flex-col bg-opacity-75 px-8 pt-12 rounded-lg overflow-hidden text-center items-center justify-center relative">
                   <img src="https://api.learningt.com/wp-content/uploads/2023/06/office-building-icon.png" alt="" />
                   <h1 className="text-5xl 2xl:text-6xl text-white mt-6"><CityCounter targetNumber={15} /></h1>
                   <h2 className="text-lg 2xl:text-xl text-white py-3">PRESENCE IN 15 CITIES</h2>
                 </div>
-              </div>
-              <div className="p-2 lg:w-1/4">
+              </motion.div>
+              <motion.div initial={{ y: 25, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, delay: 0.35 }} className="p-2 lg:w-1/4">
                 <div className="h-full flex flex-col bg-opacity-75 px-8 pt-12 rounded-lg overflow-hidden text-center items-center justify-center relative">
                   <img src="https://api.learningt.com/wp-content/uploads/2023/06/learner-icon.png" alt="" />
                   <h1 className="text-5xl 2xl:text-6xl text-white mt-6"><div className="flex"><NumberCounter initialNumber={959750} targetNumber={960000} />+</div></h1>
                   <h2 className="text-lg 2xl:text-xl text-white py-3">LEARNING HOURS</h2>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -128,31 +133,22 @@ export default function Home() {
           <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"></button>
         </div>
       </section>
-      <section className="container px-5 mx-auto overflow-hidden">
+      <section className="container px-24 mx-auto overflow-hidden">
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="lg:text-4xl sm:text-2xl font-medium title-font mb-4 text-gray-900">What people are saying</h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
         </div>
         <div className="flex flex-wrap -m-4">
-          <div className="p-4 md:w-1/2 w-full">
-            <div className="h-full bg-gray-200 px-8 items-center justify-center py-24 rounded rounded-lg">
-              <p className="leading-relaxed mb-6">I have looked into too many wells for pursuing US CPA course but GT is where my thirst quenched. It's immediate tie-up with Becker, hassle free sign-ups, easy &amp;amp; quick guidance at every step, swift responses to queries and live lectures are one of the few things that helped me choose GT with a...</p>
-              <a className="inline-flex items-center">
-                <img alt="" src={Image} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
-                <span className="flex-grow flex flex-col pl-4">
-                  <span className="title-font font-medium text-gray-900">Holden Caulfield</span>
-                  <span className="text-gray-500 text-sm">UI DEVELOPER</span>
-                </span>
-              </a>
-            </div>
+          <div className="py-4 md:w-1/2 w-full">
+            <Slideshow />
           </div>
           <div className="p-4 md:w-1/2 w-full">
-            <div className="h-full bg-gray-200 items-center justify-center flex-col rounded rounded-xl">
+            <div className="h-full items-center justify-center flex-col rounded rounded-lg">
               <div className="h-2/3">
-              <img className="w-full h-full rounded rounded-xl rounded-br-none rounded-bl-none" src="https://api.learningt.com/wp-content/uploads/2022/10/leadership-img1.jpg" alt="" />
-              {/* <iframe id="videoUrl" className="w-full h-full rounded rounded-xl rounded-br-none rounded-bl-none" src="https://www.youtube.com/embed/R90UqNNwF2g?autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen=""></iframe> */}
+                <img className="w-full h-full rounded rounded-lg rounded-br-none rounded-bl-none" src="https://api.learningt.com/wp-content/uploads/2022/10/leadership-img1.jpg" alt="" />
+                {/* <iframe id="videoUrl" className="w-full h-full rounded rounded-lg rounded-br-none rounded-bl-none" src="https://www.youtube.com/embed/R90UqNNwF2g?autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen=""></iframe> */}
               </div>
-              <div className="h-1/3 bg-purple-500 rounded rounded-xl rounded-tr-none rounded-tl-none">
+              <div className="h-1/3 bg-purple-500 rounded rounded-lg rounded-tr-none rounded-tl-none">
               </div>
             </div>
           </div>
@@ -177,7 +173,7 @@ const NumberCounter = ({ initialNumber, targetNumber }) => {
   }, [count, targetNumber]);
 
   return (
-    <div className="">{count}</div>
+    <div>{count}</div>
   );
 };
 
@@ -201,3 +197,44 @@ const CityCounter = ({ targetNumber }) => {
     </div>
   );
 };
+
+const Slideshow = () => {
+  const settings = {
+    dots: true,
+    speed: 500,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 5000,
+  }
+  return (
+    <Slider {...settings}>
+      <div>
+        <div className="h-full bg-gray-200 px-8 items-center justify-center py-24 rounded rounded-lg">
+          <p className="leading-relaxed mb-6">I have looked into too many wells for pursuing US CPA course but GT is where my thirst quenched. It's immediate tie-up with Becker, hassle free sign-ups, easy &amp;amp; quick guidance at every step, swift responses to queries and live lectures are one of the few things that helped me choose GT with a...</p>
+          <a className="inline-flex items-center">
+            <img alt="" src={Image} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+            <span className="flex-grow flex flex-col pl-4">
+              <span className="title-font font-medium text-gray-900">Devanshi Mantri</span>
+              <span className="text-gray-500 text-sm"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div className="h-full bg-gray-200 px-8 items-center justify-center py-24 rounded rounded-lg">
+          <p className="leading-relaxed mb-6">I am delighted to share my experience with GT Academy for US CPA course. As a student enrolled in their program, I can confidently say that they have provided me with an exceptional educational journey.
+            The quality of education is unparalleled. The teachers are highly knowledgeable, passionate...</p>
+          <a className="inline-flex items-center">
+            <img alt="" src={Image} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+            <span className="flex-grow flex flex-col pl-4">
+              <span className="title-font font-medium text-gray-900">Vishal Ghai</span>
+              <span className="text-gray-500 text-sm"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </Slider>
+  );
+}

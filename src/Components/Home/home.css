@@ -120,3 +120,16 @@
     background-repeat: no-repeat;
     position: relative;
 }
+
+/* .slick-dots li button {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 20px;
+    color: #bbb;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: purple;
+  } */
