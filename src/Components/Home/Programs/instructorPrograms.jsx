@@ -43,7 +43,7 @@ export default function InstructorPrograms() {
             <section className="text-gray-600 body-font">
                 <div className="container px-8 py-10 mx-auto">
                     <div className="flex flex-wrap -m-4 slider-container">
-                    {/* {tiles.map((item, index) => (
+                        {/* {tiles.map((item, index) => (
                             <Slideshow key={index} item={item} image={item.thumbnail} isActive={index === currentSlide} />
                         ))} */}
                         {tiles.map((item, index) => (
@@ -67,8 +67,8 @@ export default function InstructorPrograms() {
 
 const ProgramTile = ({ item, image }) => {
     return (
-        <div className="p-5 lg:w-1/3 shadow shadow-xl">
-            <div className="h-full border border-purple-800 px-2 rounded-md overflow-hidden text-center relative">
+        <div className="p-5 lg:w-1/3">
+            <div className="h-full shadow shadow-2xl border border-purple-800 px-2 rounded-md overflow-hidden text-center relative">
                 <div className="w-full bg-purple-600">
                     <img src={image} alt="" className="w-full h-auto" />
                 </div>
